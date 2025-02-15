@@ -30,22 +30,25 @@ def is_duplicate_event(event_key: str) -> bool:
 async def get_ollama_response(messages: list, current_query: str) -> str:
     """Send messages to Ollama API and return a response."""
     try:
-        # Base prompt for every response
-        base_prompt = "You are a helpful Slack AI assistant. Keep responses short and relevant.\n"
+        # # Base prompt for every response
+        # base_prompt = "You are a helpful Slack AI assistant. Keep responses short and relevant.\n"
 
-        # Include conversation history only if available
-        if messages:
-            history_context = "\n".join([f"User: {q}\nAssistant: {r}" for q, r in messages])
-            prompt = f"{base_prompt}\n{history_context}\nUser: {current_query}\nAssistant:"
-        else:
-            # If no previous conversation, start fresh
-            prompt = f"{base_prompt}\nUser: {current_query}\nAssistant:"
+        # # Include conversation history only if available
+        # if messages:
+        #     history_context = "\n".join([f"User: {q}\nAssistant: {r}" for q, r in messages])
+        #     prompt = f"{base_prompt}\n{history_context}\nUser: {current_query}\nAssistant:"
+        # else:
+        #     # If no previous conversation, start fresh
+        #     prompt = f"{base_prompt}\nUser: {current_query}\nAssistant:"
 
-        payload = {"model": MODEL_NAME, "prompt": prompt, "stream": False}
-        response = requests.post(OLLAMA_API_URL, json=payload)
+        # payload = {"model": MODEL_NAME, "prompt": prompt, "stream": False}
+        # response = requests.post(OLLAMA_API_URL, json=payload)
 
-        # Extract response text
-        ai_response = response.json().get("response", "No response from AI.")
+        # # Extract response text
+        # ai_response = response.json().get("response", "No response from AI.")
+
+        # Store query-response pair in history
+        ai_response = f"Dummy response for: {current_query}"
 
         # Store query-response pair in history
         message_history.append((current_query, ai_response))

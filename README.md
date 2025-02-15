@@ -1,4 +1,4 @@
-# Slack Chatbot App - Your_Name's Droid
+# Slack Chatbot App - Shubham's Droid
 
 A chatbot app named Slack that listens to any questions in a channel (where the bot is added & tagged), forwards them to an LLM API (such as Ollama or OpenAI), and responds to the message accordingly.
 

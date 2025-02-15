@@ -35,7 +35,7 @@ brew install ngrok
 ```
 
 #### 1.2 Setup ngrok authentication
-1. Sign up for an ngrok account at ngrok dashboard
+1. Sign up for an ngrok account at ngrok dashboard https://dashboard.ngrok.com/signup
 2. Retrieve your authentication token `<your_ngrok_authtoken>`
 3. Add your authentication token:
     ```

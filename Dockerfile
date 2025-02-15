@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-RUN curl -fsSL https://ollama.com/install.sh | sh
+# RUN curl -fsSL https://ollama.com/install.sh | sh
 
 # RUN ollama serve & sleep 5 && ollama run smollm:135m  
 

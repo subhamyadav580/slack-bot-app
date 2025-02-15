@@ -3,3 +3,4 @@ slackclient
 fastapi
 requests
 uvicorn
+python-dotenv

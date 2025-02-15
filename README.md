@@ -92,3 +92,8 @@ https://11ed-223-190-84-209.ngrok-free.app/slack/events
 ## Architecture Design Diagram
 
 <img src="architecture-digram.png">
+
+
+### Assignment Video Link
+
+https://drive.google.com/file/d/1aR9ShG06U8WLo7XDIbNLJtrXRgKhdsMe/view?usp=sharing
